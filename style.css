@@ -1,0 +1,99 @@
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Space Mono', monospace;
+}
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 25px;
+}
+
+#welcome-section{
+  height: 500px;
+  display: flex;
+  /*places the section at the center of the page*/
+  justify-content: center;
+  /*places the items in the middle(vertical distance) of the page*/
+  align-items: center;
+  /*centers the name*/
+  text-align: center;
+   background-image: url("https://media.istockphoto.com/photos/star-field-at-night-picture-id501655522?b=1&k=6&m=501655522&s=170667a&w=0&h=iEyaK63fm1wAtiW6ugh-CX6ePVl7lvZNzpd2d4Z4Vq4=");
+  background-repeat: no repeat;
+  background-size: cover;    
+}
+
+#projects {
+  height: 200px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  /*making the flex boxes proportional*/
+  flex: 1;
+}
+
+.column a {
+   text-decoration: none;
+  font-size: 20px;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+}
+
+
+.profile-links {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+};
